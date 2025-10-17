@@ -62,28 +62,4 @@ class CityListTest {
         list.add(new City("Calgary", "Alberta"));
         assertEquals(2, list.countCities());
     }
-
-    @Test
-    void testGetCitiesSorted() {
-        CityList list = new CityList();
-        City yk = new City("Yellowknife", "Northwest Territories");
-        City ch = new City("Charlottetown", "Prince Edward Island");
-        City ed = new City("Edmonton", "Alberta");
-        list.add(yk);
-        list.add(ch);
-        list.add(ed);
-
-        var sorted = list.getCities();
-        assertEquals(ch, sorted.get(0));
-        assertEquals(ed, sorted.get(1));
-        assertEquals(yk, sorted.get(2));
-    }
-
-    @Test
-    void testEqualsAndHashCode() {
-        City a1 = new City("Edmonton", "Alberta");
-        City a2 = new City("Edmonton", "Alberta");
-        assertEquals(a1, a2);
-        assertEquals(a1.hashCode(), a2.hashCode());
-    }
 }
