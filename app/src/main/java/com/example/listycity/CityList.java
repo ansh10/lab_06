@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Keeps a list of {@link City} objects and basic operations.
- */
 public class CityList {
-    /** Backing list of cities. */
     private final List<City> cities = new ArrayList<>();
 
     /**

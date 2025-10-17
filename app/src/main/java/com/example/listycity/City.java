@@ -42,12 +42,6 @@ public class City implements Comparable<City> {
         return city.equals(c.city) && province.equals(c.province);
     }
 
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(city, province);
-    }
-
     @Override
     public String toString() {
         return city + ", " + province;

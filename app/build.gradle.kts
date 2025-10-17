@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(files("/Users/anshk/AppData/Local/Android/Sdk/platforms/android-34/android.jar"))
 
 
     androidTestImplementation(libs.ext.junit)
